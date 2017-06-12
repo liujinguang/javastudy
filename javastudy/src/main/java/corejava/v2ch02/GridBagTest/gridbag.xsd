@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/gridbag"
+	xmlns:tns="http://www.example.org/gridbag" elementFormDefault="qualified">
+
+    <complexType name="GridBagType">
+    	<sequence>
+    		<element name="row" type="tns:RowType" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="RowType">
+    	<sequence>
+    		<element name="cell" type="tns:CellType" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CellType">
+    	<sequence>
+    		<element ref="tns:bean"></element>
+    	</sequence>
+    	<attribute name="gridx" type="int" use="optional"></attribute>
+    	<attribute name="gridy" type="int" use="optional"></attribute>
+    	<attribute name="gridwidth" type="int" use="optional"
+    		default="1">
+    	</attribute>
+    	<attribute name="gridheight" type="int" use="optional"
+    		default="1">
+    	</attribute>
+    	<attribute name="weightx" type="int" use="optional"
+    		default="0">
+    	</attribute>
+    	<attribute name="weighty" type="int" use="optional"
+    		default="0">
+    	</attribute>
+    	<attribute name="fill" use="optional" default="NONE">
+    		<simpleType>
+    			<restriction base="string">
+    				<enumeration value="NONE"></enumeration>
+    				<enumeration value="BOTH"></enumeration>
+    				<enumeration value="HORIZONTAL"></enumeration>
+    				<enumeration value="VERTICAL"></enumeration>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="anchor" use="optional">
+    		<simpleType>
+    			<restriction base="string">
+    				<enumeration value="CENTER"></enumeration>
+    				<enumeration value="NORTH"></enumeration>
+    				<enumeration value="NORTHEAST"></enumeration>
+    				<enumeration value="EAST"></enumeration>
+    				<enumeration value="SOUTHEAST"></enumeration>
+    				<enumeration value="SOUTH"></enumeration>
+    				<enumeration value="SOUTHWEST"></enumeration>
+    				<enumeration value="WEST"></enumeration>
+    				<enumeration value="NORTHWEST"></enumeration>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="ipadx" type="int" use="optional" default="0"></attribute>
+    	<attribute name="ipady" type="int" use="optional" default="0"></attribute>
+    </complexType>
+
+    <complexType name="BeanType">
+    	<sequence>
+    		<element name="class" type="string"></element>
+    		<element name="property" type="tns:PropertyType"
+    			minOccurs="0" maxOccurs="unbounded">
+    		</element>
+    	</sequence>
+    	<attribute name="id" type="ID" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="PropertyType">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    		<element name="value" type="tns:ValueType"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="ValueType">
+    	<choice>
+    		<element ref="tns:bean"></element>
+    		<element name="name" type="int"></element>
+    		<element name="string" type="string"></element>
+    		<element name="boolean" type="boolean"></element>
+    	</choice>
+    </complexType>
+    
+    <element name="gridbag" type="tns:GridBagType"></element>
+
+    <element name="bean" type="tns:BeanType"></element>
+</schema>

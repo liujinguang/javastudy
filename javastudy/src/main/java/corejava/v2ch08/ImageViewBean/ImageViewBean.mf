@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+
+Name: com/horstmann/corejava/ImageViewBean.class
+Java-Bean: True
+
+Name: com/horstmann/corejava/ImageViewBeanBeanInfo.class
+Java-Bean: True
