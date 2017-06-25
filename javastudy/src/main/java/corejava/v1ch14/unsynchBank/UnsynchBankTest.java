@@ -1,4 +1,4 @@
-package v1ch14.unsynchBank;
+package corejava.v1ch14.unsynchBank;
 
 public class UnsynchBankTest {
 	public static void main(String[] args) {
@@ -8,7 +8,6 @@ public class UnsynchBankTest {
 			Thread t = new Thread(r);
 			t.start();
 		}
-
 	}
 
 	public static final int NACCOUNTS = 100;

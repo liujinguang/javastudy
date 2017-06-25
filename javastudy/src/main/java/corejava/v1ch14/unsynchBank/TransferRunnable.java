@@ -1,4 +1,4 @@
-package v1ch14.unsynchBank;
+package corejava.v1ch14.unsynchBank;
 
 public class TransferRunnable implements Runnable {
 	

@@ -1,4 +1,4 @@
-package v1ch14.synchBank2;
+package corejava.v1ch14.synchBank2;
 
 public class Bank {
 

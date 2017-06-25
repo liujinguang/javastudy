@@ -1,4 +1,4 @@
-package v1ch14.ThreadPoolTest;
+package corejava.v1ch14.ThreadPoolTest;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -92,7 +92,7 @@ class MatchCounter implements Callable<Integer> {
 			}
 
 		} catch (InterruptedException e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 
 		return count;
