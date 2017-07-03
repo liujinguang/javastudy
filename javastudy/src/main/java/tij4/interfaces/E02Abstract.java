@@ -1,4 +1,4 @@
-package interfaces;
+package tij4.interfaces;
 
 /****************** Exercise 2 *****************
 * Create a class as abstract without including

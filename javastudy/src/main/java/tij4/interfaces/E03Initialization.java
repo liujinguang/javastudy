@@ -1,4 +1,4 @@
-package interfaces;
+package tij4.interfaces;
 
 public class E03Initialization {
     public static void main(String args[]) {

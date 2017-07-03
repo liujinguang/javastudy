@@ -4,6 +4,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+//http://haolloyin.blog.51cto.com/1177454/333257/
+
 public class DynamicProxy {
 	public static void main(String[] args) {
 		Calculator calculator = new CalculatorImp();

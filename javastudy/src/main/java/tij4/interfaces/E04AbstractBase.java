@@ -1,4 +1,4 @@
-package interfaces;
+package tij4.interfaces;
 
 /****************** Exercise 4 *****************
 * Create an abstract class with no methods.
