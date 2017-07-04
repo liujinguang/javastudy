@@ -1,4 +1,4 @@
-package interfaces.classprocessor2;
+package tij4.interfaces.classprocessor2;
 
 import java.util.Arrays;
 

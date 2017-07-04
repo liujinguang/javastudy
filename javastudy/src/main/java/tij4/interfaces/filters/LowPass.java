@@ -1,4 +1,4 @@
-package interfaces.filters;
+package tij4.interfaces.filters;
 
 public class LowPass extends Filter {
     double cutoff;
