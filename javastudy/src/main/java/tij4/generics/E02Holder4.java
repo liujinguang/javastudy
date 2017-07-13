@@ -1,4 +1,4 @@
-package generics;
+package tij4.generics;
 
 public class E02Holder4 {
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package generics;
+package tij4.generics;
 
-import typeinfo.pets.Mouse;
-import typeinfo.pets.Pet;
+import tij4.typeinfo.pets.Mouse;
+import tij4.typeinfo.pets.Pet;
 
 public class E01PetsHolder {
 	public static void main(String[] args) {

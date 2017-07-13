@@ -1,4 +1,4 @@
-package generics;
+package tij4.generics;
 
 //: generics/Holder1.java
 

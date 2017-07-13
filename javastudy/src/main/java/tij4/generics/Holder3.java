@@ -1,4 +1,4 @@
-package generics;
+package tij4.generics;
 
 public class Holder3<T> {
 	

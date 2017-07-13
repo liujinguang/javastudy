@@ -1,5 +1,5 @@
 //: typeinfo/pets/Pet.java
-package typeinfo.pets;
+package tij4.typeinfo.pets;
 
 public class Pet extends Individual {
 	public Pet(String name) {
