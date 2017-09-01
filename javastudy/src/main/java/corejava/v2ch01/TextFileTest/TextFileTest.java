@@ -1,4 +1,4 @@
-package v2ch01.TextFileTest;
+package corejava.v2ch01.TextFileTest;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -52,18 +52,18 @@ public class TextFileTest {
 		staff[0] = new Employee("Carl Cracker", 75000, 1987, 12, 15);
 		staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1);
 		staff[2] = new Employee("Tony Tester", 40000, 1990, 3, 15);
-		
+
 		try {
 			PrintWriter out = new PrintWriter("employee.dat");
 			writeData(staff, out);
 			out.close();
-			
-			//retrieve all records into a new array
+
+			// retrieve all records into a new array
 			Scanner in = new Scanner(new FileReader("employee.dat"));
 			Employee[] newStaff = readData(in);
 			in.close();
-			
-			//print the newly read employee records
+
+			// print the newly read employee records
 			for (Employee e : newStaff) {
 				System.out.println(e);
 			}

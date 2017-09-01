@@ -1,4 +1,4 @@
-package v2ch01.CharsetTest;
+package corejava.v2ch01.CharsetTest;
 
 import java.nio.charset.Charset;
 import java.util.Map;
@@ -11,6 +11,8 @@ public class CharsetTest {
 		for (String alias : aliases) {
 			System.out.println(alias);
 		}
+		System.out.println("======================");
+		
 		
 		Map<String, Charset> charsets = Charset.availableCharsets();
 		for (String name:charsets.keySet()) {
