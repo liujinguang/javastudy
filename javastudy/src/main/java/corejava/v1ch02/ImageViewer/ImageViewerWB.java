@@ -1,4 +1,4 @@
-package v1ch02.ImageViewer;
+package corejava.v1ch02.ImageViewer;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

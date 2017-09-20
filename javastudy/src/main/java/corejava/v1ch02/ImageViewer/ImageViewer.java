@@ -1,4 +1,4 @@
-package v1ch02.ImageViewer;
+package corejava.v1ch02.ImageViewer;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
